@@ -1,0 +1,50 @@
+    /* Hesap makinesinin mavi borderını sağlayan ana div */
+
+    .kırmızı-kutu {
+        border-style: solid;
+        border-color: gray;
+        width: 300px;
+        height: 500px;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+    }
+
+    .button-style {
+        background-color: #D3D3D3;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin: 2px;
+    }
+
+    .button-style:focus {
+        background-color: orange;
+    }
+
+    .button-style:hover {
+        background-color: orange;
+    }
+
+    .esitle_temizle {
+        background-color: #D3D3D3;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin: 2px;
+    }
+
+    .esitle_temizle:hover {
+        background-color: orange;
+    }
+
+    #input {
+        width: 200px;
+        height: 50px;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+    }

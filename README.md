@@ -1,1 +1,1 @@
-DEMO: https://furkancpr.github.io/Basit-Hesap-Makinesi/
+DEMO: https://furkancpr.github.io/HTML-JS-Hesap-Makinesi/

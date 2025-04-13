@@ -1,4 +1,5 @@
-![Screenshot_5](https://github.com/user-attachments/assets/263fae5e-7495-4dbe-8702-06b69f0fe047)
+![Screenshot_7](https://github.com/user-attachments/assets/17e69cf2-4a89-4d8b-962d-36932b180265)
 
-DEMO: https://furkancpr.github.io/simple_calculator/
+Link: https://furkancpr.github.io/simple_calculator/
+
 

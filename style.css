@@ -1,6 +1,6 @@
     /* Hesap makinesinin mavi borderını sağlayan ana div */
 
-    .kırmızı-kutu {
+    .red-box {
         border-style: solid;
         border-color: gray;
         width: 300px;
@@ -29,7 +29,7 @@
         background-color: orange;
     }
 
-    .esitle_temizle {
+    .equal_clear {
         background-color: #D3D3D3;
         width: 100px;
         height: 100px;
@@ -38,7 +38,7 @@
         margin: 2px;
     }
 
-    .esitle_temizle:hover {
+    .equal_clear:hover {
         background-color: orange;
     }
 

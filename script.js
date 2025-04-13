@@ -1,106 +1,106 @@
-var toplam = 0;
+var total = 0;
 var operator = "";
 
-// Formda submit etmesin diye koyduk bunu
+//  Preventing submit action of the form
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault();
 });
 
-var arti_butonu = document.getElementById("arti");
-var eksi_butonu = document.getElementById("eksi");
-var carpi_butonu = document.getElementById("carpi");
-var bolu_butonu = document.getElementById("bolu");
-var temizle_butonu = document.getElementById("temizle");
-var esittir_butonu = document.getElementById("esittir");
+var plus_button = document.getElementById("plus");
+var minus_button = document.getElementById("minus");
+var mult_button = document.getElementById("mult");
+var div_button = document.getElementById("div");
+var clear_butonu = document.getElementById("clear");
+var equal_butonu = document.getElementById("equal");
 
 
-arti_butonu.addEventListener("click", sum_input);
-eksi_butonu.addEventListener("click", sub_input);
-carpi_butonu.addEventListener("click", mul_input);
-bolu_butonu.addEventListener("click", div_input);
-temizle_butonu.addEventListener("click", temizle);
-esittir_butonu.addEventListener("click", esittir);
+plus_button.addEventListener("click", sum_input);
+minus_button.addEventListener("click", sub_input);
+mult_button.addEventListener("click", mul_input);
+div_button.addEventListener("click", div_input);
+clear_butonu.addEventListener("click", clear_input);
+equal_butonu.addEventListener("click", equal_input);
 
 function sum_input() {
     if (operator == "") {
         var input = Number(document.getElementById("input").value);
-        if (toplam == 0) {
-            toplam = input;
+        if (total == 0) {
+            total = input;
         }
         else {
-            toplam = toplam + input;
+            total = total + input;
         }
-        document.getElementById("input").value = toplam;
+        document.getElementById("input").value = total;
         operator = "+";
     }
 }
 function sub_input() {
     if (operator == "") {
         var input = Number(document.getElementById("input").value);
-        if (toplam == 0) {
-            toplam = input;
+        if (total == 0) {
+            total = input;
         }
         else {
-            toplam = toplam - input;
+            total = total - input;
         }
-        document.getElementById("input").value = toplam;
+        document.getElementById("input").value = total;
         operator = "-";
     }
 }
 function mul_input() {
     if (operator == "") {
         var input = Number(document.getElementById("input").value);
-        if (toplam == 0) {
-            toplam = input;
+        if (total == 0) {
+            total = input;
         }
         else {
-            toplam = toplam * input;
+            total = total * input;
         }
-        document.getElementById("input").value = toplam;
+        document.getElementById("input").value = total;
         operator = "*";
     }
 }
 function div_input() {
     if (operator == "") {
         var input = Number(document.getElementById("input").value);
-        if (toplam == 0) {
-            toplam = input;
+        if (total == 0) {
+            total = input;
         }
         else {
-            toplam = toplam / input;
+            total = total / input;
         }
-        document.getElementById("input").value = toplam;
+        document.getElementById("input").value = total;
         operator = "/";
     }
 }
-function temizle() {
-    toplam = 0;
+function clear_input() {
+    total = 0;
     document.getElementById("input").value = "";
 }
-function esittir() {
+function equal_input() {
     var input = Number(document.getElementById("input").value);
     if (operator == "+") {
-        toplam = toplam + input;
-        document.getElementById("input").value = toplam;
-        toplam = 0;
+        total = total + input;
+        document.getElementById("input").value = total;
+        total = 0;
     }
     if (operator == "-") {
-        toplam = toplam - input;
-        document.getElementById("input").value = toplam;
-        toplam = 0;
+        total = total - input;
+        document.getElementById("input").value = total;
+        total = 0;
     }
     if (operator == "*") {
-        toplam = toplam * input;
-        document.getElementById("input").value = toplam;
-        toplam = 0;
+        total = total * input;
+        document.getElementById("input").value = total;
+        total = 0;
     }
     if (operator == "/") {
-        toplam = toplam / input;
+        total = total / input;
         if (input == 0) {
-            alert("0 sayısına bölemezsiniz!")
+            alert("You cannot divide by 0!")
         }
-        document.getElementById("input").value = toplam;
-        toplam = 0;
+        document.getElementById("input").value = total;
+        total = 0;
     }
     operator = "";
 }

@@ -1,4 +1,4 @@
-<!-- Buradaki doctype, html ve head taglarını editöre ! yazarak oluşturduk-->
+<!-- HTML EMMET is ! -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Sayfanın tarayıcıdaki sekmede gözüken adı-->
+    <!-- The name of the page in the browser tab-->
     <title>Calculator</title>
 </head>
 
@@ -14,17 +14,17 @@
 
 <body>
 
-    <div class="kırmızı-kutu">Hesap Makinesi <br><br>
-        <!-- Form kullanılmasının sebebi reset fonksiyonunun çalışması için-->
+    <div class="red-box">Calculator<br><br>
+        <!-- The reason for using a form is that for the reset function to work-->
         <form>
-            <input type="number" id="input" placeholder="Sayı Giriniz:" class="input-style" autofocus><br><br>
-            <button type="button" id="arti" class="button-style">+</button>
-            <button type="button" id="eksi" class="button-style">-</button>
-            <button type="button" id="carpi" class="button-style">*</button>
-            <button type="button" id="bolu" class="button-style">/</button>
-            <button type="button" id="esittir" class="esitle_temizle">=</button>
-            <!-- <input type="text" id="result" placeholder="Sonuç=" disabled><br><br> -->
-            <input type="reset" value="Temizle" class="esitle_temizle" id="temizle">
+            <input type="number" id="input" placeholder="Enter a number:" class="input-style" autofocus><br><br>
+            <button type="button" id="plus" class="button-style">+</button>
+            <button type="button" id="minus" class="button-style">-</button>
+            <button type="button" id="mult" class="button-style">*</button>
+            <button type="button" id="div" class="button-style">/</button>
+            <button type="button" id="equal" class="equal_clear">=</button>
+            <!-- <input type="text" id="result" placeholder="Result=" disabled><br><br> -->
+            <input type="reset" value="clear" class="equal_clear" id="clear">
         </form>
     </div>
 
